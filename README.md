@@ -15,55 +15,50 @@
 
 ### Association
 - has_many :items
-- has_many :street_addresses
 - has_many :purchase_records
 
 ## itemテーブル
 
-| Column          | Type      | Options           |
-| --------------- | --------- | ----------------- |
-| image           |           |                   |
-| name            | string    | null: false       |
-| description     | text      | null: false       |
-| category        | integer   | null: false       |
-| item_status     | integer   | null: false       |
-| delivery_charge | integer   | null: false       |
-| prefectures     | integer   | null: false       |
-| sipping_days    | integer   | null: false       |
-| price           | integer   | null: false       |
-| user_id         | reference | foreign_key: true |
+| Column             | Type      | Options           |
+| ------------------ | --------- | ----------------- |
+| name               | string    | null: false       |
+| description        | text      | null: false       |
+| category_id        | integer   | null: false       |
+| item_status_id     | integer   | null: false       |
+| delivery_charge_id | integer   | null: false       |
+| prefectures_id     | integer   | null: false       |
+| sipping_days_id    | integer   | null: false       |
+| price              | integer   | null: false       |
+| user               | reference | foreign_key: true |
 
 ### Association
 - belongs_to :user
-- has_one :street_address
-- has_one : purchase_record
+- has_one :purchase_record
 
 ## Street_addressテーブル
 
 | Column          | Type      | Options           |
 | --------------- | --------- | ----------------- |
 | postal_code     | string    | null: false       |
-| phone_number    | integer   | null: false       |
-| prefectures     | integer   | null: false       |
+| phone_number    | string    | null: false       |
+| prefectures_id  | integer   | null: false       |
 | municipality    | string    | null: false       |
 | address         | string    | null: false       |
-| building_name   | string    | null: false       |
+| building_name   | string    |                   |
+| purchase_record | reference | foreign_key: true |
 
 ### Association
-- belongs_to :user
-- belongs_to :item
-- has_one : purchase_record
+- belongs_to : purchase_record
 
 ## purchase_recordテーブル
 
-| Column  | Type      | Options           |
-| ------- | --------- | ----------------- |
-| user_id | reference | foreign_key: true |
-| item_id | reference | foreign_key: true |
-| date    | date      | null: false       |
+| Column         | Type      | Options           |
+| -------------- | --------- | ----------------- |
+| user           | reference | foreign_key: true |
+| item           | reference | foreign_key: true |
 
 ### Association
 
-belongs_to :user
-belongs_to :item
-belongs_to :street_address
+- belongs_to :user
+- belongs_to :item
+- has_one :street_address
