@@ -26,8 +26,8 @@
 | category_id        | integer   | null: false       |
 | item_status_id     | integer   | null: false       |
 | delivery_charge_id | integer   | null: false       |
-| prefectures_id     | integer   | null: false       |
-| sipping_days_id    | integer   | null: false       |
+| prefecture_id      | integer   | null: false       |
+| sipping_day_id     | integer   | null: false       |
 | price              | integer   | null: false       |
 | user               | reference | foreign_key: true |
 
@@ -41,7 +41,7 @@
 | --------------- | --------- | ----------------- |
 | postal_code     | string    | null: false       |
 | phone_number    | string    | null: false       |
-| prefectures_id  | integer   | null: false       |
+| prefecture_id   | integer   | null: false       |
 | municipality    | string    | null: false       |
 | address         | string    | null: false       |
 | building_name   | string    |                   |
