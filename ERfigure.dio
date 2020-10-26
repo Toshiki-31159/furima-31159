@@ -1,4 +1,4 @@
-<mxfile host="65bd71144e" modified="2020-10-26T06:08:03.344Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.49.2 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36" version="13.6.5" etag="ASITUvcaKE2OiZqIRDkq">
+<mxfile host="65bd71144e" modified="2020-10-26T09:10:17.029Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.49.2 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36" version="13.6.5" etag="anYdHMRkaVOOE_DxB-lV">
     <diagram id="Lnlgin91V3uQ1RuY2VDo" name="ページ1">
         <mxGraphModel dx="996" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
@@ -13,7 +13,7 @@
                 <mxCell id="7" value="Item" style="swimlane;" vertex="1" parent="1">
                     <mxGeometry x="450" y="240" width="160" height="230" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="&lt;span data-lucid-type=&quot;application/vnd.lucid.text&quot; data-lucid-content=&quot;{&amp;#34;t&amp;#34;:&amp;#34;image name description category item-status delivery-charge area\nsipping-days price&amp;#34;,&amp;#34;m&amp;#34;:[{&amp;#34;s&amp;#34;:0,&amp;#34;n&amp;#34;:&amp;#34;f&amp;#34;,&amp;#34;v&amp;#34;:&amp;#34;Lucid JP&amp;#34;,&amp;#34;e&amp;#34;:83},{&amp;#34;s&amp;#34;:0,&amp;#34;n&amp;#34;:&amp;#34;s&amp;#34;,&amp;#34;v&amp;#34;:22.22222222222222,&amp;#34;e&amp;#34;:83},{&amp;#34;s&amp;#34;:0,&amp;#34;n&amp;#34;:&amp;#34;c&amp;#34;,&amp;#34;v&amp;#34;:&amp;#34;333333ff&amp;#34;,&amp;#34;e&amp;#34;:83}]}&quot;&gt;&lt;span style=&quot;font-size: 16.6667px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;image &lt;br&gt;name&lt;br&gt; description&lt;br&gt; category&lt;br&gt; item-status&lt;br&gt; delivery_charge&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(255 , 255 , 255) ; font-size: 16.6667px&quot;&gt;prefectures&lt;/span&gt;&lt;span style=&quot;font-size: 16.6667px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt; &lt;br&gt;sipping_days&lt;br&gt; price&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="7">
+                <mxCell id="6" value="&lt;span data-lucid-type=&quot;application/vnd.lucid.text&quot; data-lucid-content=&quot;{&amp;#34;t&amp;#34;:&amp;#34;image name description category item-status delivery-charge area\nsipping-days price&amp;#34;,&amp;#34;m&amp;#34;:[{&amp;#34;s&amp;#34;:0,&amp;#34;n&amp;#34;:&amp;#34;f&amp;#34;,&amp;#34;v&amp;#34;:&amp;#34;Lucid JP&amp;#34;,&amp;#34;e&amp;#34;:83},{&amp;#34;s&amp;#34;:0,&amp;#34;n&amp;#34;:&amp;#34;s&amp;#34;,&amp;#34;v&amp;#34;:22.22222222222222,&amp;#34;e&amp;#34;:83},{&amp;#34;s&amp;#34;:0,&amp;#34;n&amp;#34;:&amp;#34;c&amp;#34;,&amp;#34;v&amp;#34;:&amp;#34;333333ff&amp;#34;,&amp;#34;e&amp;#34;:83}]}&quot;&gt;&lt;span style=&quot;font-size: 16.6667px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;image &lt;br&gt;name&lt;br&gt; description&lt;br&gt; category&lt;br&gt; item-status&lt;br&gt; delivery_charge&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(255 , 255 , 255) ; font-size: 16.6667px&quot;&gt;prefectures&lt;/span&gt;&lt;span style=&quot;font-size: 16.6667px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt; &lt;br&gt;sipping_days&lt;br&gt; price&lt;br&gt;user_id&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;" style="shape=ext;double=1;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="7">
                     <mxGeometry y="20" width="160" height="210" as="geometry"/>
                 </mxCell>
                 <mxCell id="22" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" target="6">
@@ -23,9 +23,9 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="27" value="Purchase-information" style="swimlane;fontColor=#FFFFFF;" vertex="1" parent="1">
-                    <mxGeometry x="450" y="560" width="180" height="210" as="geometry"/>
+                    <mxGeometry x="250" y="555" width="180" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="26" value="&lt;span data-lucid-type=&quot;application/vnd.lucid.text&quot; data-lucid-content=&quot;{&amp;#34;t&amp;#34;:&amp;#34;card-number expiration-date security-code postal&amp;#34;,&amp;#34;m&amp;#34;:[{&amp;#34;s&amp;#34;:0,&amp;#34;n&amp;#34;:&amp;#34;f&amp;#34;,&amp;#34;v&amp;#34;:&amp;#34;Lucid JP&amp;#34;,&amp;#34;e&amp;#34;:48},{&amp;#34;s&amp;#34;:0,&amp;#34;n&amp;#34;:&amp;#34;s&amp;#34;,&amp;#34;v&amp;#34;:22.22222222222222,&amp;#34;e&amp;#34;:48},{&amp;#34;s&amp;#34;:0,&amp;#34;n&amp;#34;:&amp;#34;c&amp;#34;,&amp;#34;v&amp;#34;:&amp;#34;333333ff&amp;#34;,&amp;#34;e&amp;#34;:48}]}&quot;&gt;&lt;span style=&quot;font-size: 16.6667px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;card-number &lt;br&gt;expiration-date&lt;br&gt; security-code&lt;br&gt; postal-code&lt;br&gt;phone-number&lt;br&gt;prefectures&lt;br&gt;municipality&lt;br&gt;address&lt;br&gt;building-name&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="27">
+                <mxCell id="26" value="&lt;span data-lucid-type=&quot;application/vnd.lucid.text&quot; data-lucid-content=&quot;{&amp;#34;t&amp;#34;:&amp;#34;card-number expiration-date security-code postal&amp;#34;,&amp;#34;m&amp;#34;:[{&amp;#34;s&amp;#34;:0,&amp;#34;n&amp;#34;:&amp;#34;f&amp;#34;,&amp;#34;v&amp;#34;:&amp;#34;Lucid JP&amp;#34;,&amp;#34;e&amp;#34;:48},{&amp;#34;s&amp;#34;:0,&amp;#34;n&amp;#34;:&amp;#34;s&amp;#34;,&amp;#34;v&amp;#34;:22.22222222222222,&amp;#34;e&amp;#34;:48},{&amp;#34;s&amp;#34;:0,&amp;#34;n&amp;#34;:&amp;#34;c&amp;#34;,&amp;#34;v&amp;#34;:&amp;#34;333333ff&amp;#34;,&amp;#34;e&amp;#34;:48}]}&quot;&gt;&lt;span style=&quot;font-size: 16.6667px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt; postal-code&lt;br&gt;phone-number&lt;br&gt;prefectures&lt;br&gt;municipality&lt;br&gt;address&lt;br&gt;building-name&lt;br&gt;&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="27">
                     <mxGeometry y="20" width="180" height="190" as="geometry"/>
                 </mxCell>
                 <mxCell id="30" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;" edge="1" parent="1" target="26">
@@ -38,6 +38,30 @@
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="530" y="555" as="sourcePoint"/>
                         <mxPoint x="590" y="460" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="purchase_record" style="swimlane;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="560" width="120" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="user_id&lt;br&gt;item_id&lt;br&gt;date" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FFFFFF;" vertex="1" parent="33">
+                    <mxGeometry y="25" width="120" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="34">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="390" y="570" as="sourcePoint"/>
+                        <mxPoint x="490" y="470" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="" style="endArrow=none;html=1;rounded=0;fontColor=#FFFFFF;exitX=0.619;exitY=1.005;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.333;entryY=-0.036;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6" target="33">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="360" y="520" as="sourcePoint"/>
+                        <mxPoint x="549" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" value="" style="endArrow=none;html=1;rounded=0;fontColor=#FFFFFF;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.389;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="26" target="34">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="360" y="520" as="sourcePoint"/>
+                        <mxPoint x="520" y="520" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
             </root>
