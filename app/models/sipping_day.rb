@@ -1,0 +1,2 @@
+class SippingDay < ApplicationRecord
+end
