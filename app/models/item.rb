@@ -1,8 +1,11 @@
 class Item < ApplicationRecord
   belongs_to :user
   extend ActiveHash::Associations::ActiveRecordExtensions
-  belongs_to_active_hash :category, :item_status, :delivery_charge,
-                         :prefecture, :sipping_day
+  belongs_to_active_hash :category
+  belongs_to_active_hash :item_status
+  belongs_to_active_hash :delivery_charge
+  belongs_to_active_hash :prefecture
+  belongs_to_active_hash :sipping_day
 
   with_options presence: true do
     validates :name, :description
