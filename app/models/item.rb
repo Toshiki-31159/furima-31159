@@ -10,7 +10,7 @@ class Item < ApplicationRecord
 
   with_options presence: true do
     validates :name, :description, :image
-    validates :price, format: {with: /\A[0-9]+\z/}
+    validates :price, format: {with: /\A[3-9][0-9]{2}|[1-9][0-9]{3,6}\z/}
   end
   with_options presence: true, numericality: {other_than: 1} do
     validates :category_id, :item_status_id, :delivery_charge_id,
