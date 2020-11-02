@@ -126,7 +126,7 @@
     <%= link_to '新規投稿商品', "#", class: "subtitle" %>
     <ul class='item-lists'>
 
-    <% if @item.nil? %>
+    <% if @items[0] != nil %>
       <% @items.each do |item| %>
       <li class='list'>
         <div class='item-img-content'>
