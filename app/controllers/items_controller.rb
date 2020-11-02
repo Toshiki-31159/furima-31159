@@ -1,6 +1,7 @@
 class ItemsController < ApplicationController
 
-  def indx
+  def index
+    @items = Item.all.order(id: :DESC)
   end
 
   def new
