@@ -1,15 +1,12 @@
 class ItemsController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :edit]
 
   def index
     @items = Item.order(id: :DESC)
   end
 
   def new
-    if user_signed_in?
       @item = Item.new
-    else
-      redirect_to  new_user_session_path
-    end 
   end
 
   def create
@@ -34,14 +31,10 @@ class ItemsController < ApplicationController
   end
 
   def edit
-    if user_signed_in?
       @item = Item.find(params[:id])
       if current_user.id != @item.user_id
         redirect_to root_path
       end
-    else
-      redirect_to new_user_session_path
-    end
   end
 
   def update
