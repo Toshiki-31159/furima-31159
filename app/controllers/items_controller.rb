@@ -1,6 +1,7 @@
 class ItemsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :edit]
-  before_action :show_params, only: [:show, :edit, :update]
+  before_action :authenticate_user!, only: [:new, :edit, :destroy]
+  before_action :show_params, only: [:show, :update, :edit, :destroy]
+  before_action :user_check, only: [:edit, :destroy]
 
   def index
     @items = Item.order(id: :DESC)
@@ -23,17 +24,11 @@ class ItemsController < ApplicationController
   end
 
   def destroy
-    item = Item.find(params[:id])
-    if user_signed_in? && current_user.id == item.user_id
-      item.destroy
-      redirect_to root_path
-    end
+    @item.destroy
+    redirect_to root_path
   end
 
   def edit
-      if current_user.id != @item.user_id
-        redirect_to root_path
-      end
   end
 
   def update
@@ -52,5 +47,11 @@ class ItemsController < ApplicationController
 
   def show_params
     @item = Item.find(params[:id])
+  end
+
+  def user_check
+    if current_user.id != @item.user_id
+      redirect_to root_path
+    end
   end
 end
