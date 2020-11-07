@@ -31,6 +31,9 @@ class ItemsController < ApplicationController
   end
 
   def edit
+    unless PurchaseRecord.find_by(item_id: params[:id]).nil?
+      redirect_to root_path
+    end
   end
 
   def update
