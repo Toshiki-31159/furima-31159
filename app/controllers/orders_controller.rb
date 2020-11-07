@@ -1,5 +1,8 @@
 class OrdersController < ApplicationController
 before_action :item_params
+before_action :sold_out_item
+before_action :authenticate_user!
+before_action :user_check
 
   def index
     @order = ItemOrder.new
@@ -26,6 +29,18 @@ before_action :item_params
 
   def item_params
     @item = Item.find(params[:item_id])
+  end
+
+  def sold_out_item
+    unless PurchaseRecord.find_by(item_id: params[:item_id]).nil?
+      redirect_to root_path
+    end
+  end
+
+  def user_check
+    if current_user.id == @item.user_id
+      redirect_to root_path
+    end
   end
 
   def pay_item
