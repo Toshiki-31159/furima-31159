@@ -32,7 +32,7 @@ before_action :user_check
   end
 
   def sold_out_item
-    unless PurchaseRecord.find_by(item_id: params[:item_id]).nil?
+    unless @item.purchase_record.nil?
       redirect_to root_path
     end
   end
