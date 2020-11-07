@@ -5,6 +5,7 @@ class ItemsController < ApplicationController
 
   def index
     @items = Item.order(id: :DESC)
+    @order = PurchaseRecord.all
   end
 
   def new
@@ -21,6 +22,7 @@ class ItemsController < ApplicationController
   end
 
   def show
+    @order = PurchaseRecord.find_by(item_id: params[:id])
   end
 
   def destroy
